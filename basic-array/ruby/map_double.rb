@@ -15,14 +15,24 @@
 
 
 ### 1/7/22 Submission using no built in methods ###
+# def double(array)
+#   doubled_number = []
+#   i = 0
+#   while i < array.length
+#     doubled_number << array[i] * 2
+#     i += 1
+#   end
+#   return doubled_number
+# end
+
+# p double([4, 2, 5, 99, -4])
+
+
+### 1/7/22 Refactored submission using built in methods ###
+
 def double(array)
-  doubled_number = []
-  i = 0
-  while i < array.length
-    doubled_number << array[i] * 2
-    i += 1
-  end
-  return doubled_number
+  array.map!{ |n| n * 2 }
+  return array
 end
 
 p double([4, 2, 5, 99, -4])
