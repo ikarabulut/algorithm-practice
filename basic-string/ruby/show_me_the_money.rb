@@ -11,7 +11,7 @@
 # 3 A loop will be needed to go through the entire input string.
 # 4 within that loop we will need an if statement to check if that position is a "$"
 # 5 if it is we can stop the loop right there and return true, if it is not it will go through the rest of the positions. 
-# 6 If nothing is a "$" then we will need a variable set to false at the beginning of the method.
+# 6 If nothing is a "$" then we will need a variable set to false at the beginning of the method which would stay as false when it is returned at the end of the method.
 
 def money?(string)
   i = 0
